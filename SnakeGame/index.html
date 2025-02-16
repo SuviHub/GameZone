@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Eat All You Can...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Add this right after the opening <body> tag -->
+    <button class="home-button" onclick="goToHome()">
+        <i class="fa-solid fa-home"></i> Home
+    </button>
+
+    <div class="container">
+        <div id="scoreBox">Snake Length : 0</div>
+        <div id="highScoreBox">High Score : 0</div>
+        <div id="board"></div>
+        <div id="reset">
+            Reset Game
+        </div>
+
+        <div class="difficulty-controls">
+            <div class="difficulty-buttons">
+                <button class="difficulty-btn" onclick="setDifficulty(8)">Easy</button>
+                <button class="difficulty-btn" onclick="setDifficulty(10)">Medium</button>
+                <button class="difficulty-btn" onclick="setDifficulty(15)">Hard</button>
+            </div>
+        </div>
+
+        <div class="musicBtn" >
+            <i class="fa-solid fa-volume-high" id="playS"></i>
+            <i class="fa-solid fa-volume-xmark" id="stopS" style="display: none;"></i>
+        </div>
+
+        <div class="help">
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+
+        <div id="helpModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>How to Play</h2>
+                <p>Here are the instructions to play the Snake Game:</p>
+                <ul>
+                    <li>Use the ARROW KEYS to control the snake movement.</li>
+                    <li>Eat food to grow your snake and increase your score.</li>
+                    <li>Don't hit the walls or your own tail, or the game will end.</li>
+                </ul>
+                <p>Have fun playing!</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function goToHome() {
+            window.location.href = "../index.html";
+        }
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>

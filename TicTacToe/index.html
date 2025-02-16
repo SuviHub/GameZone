@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <button class="home-button" onclick="goToHome()">
+      <i class="fa-solid fa-home"></i> Home
+    </button>
+
+    <div class="msg-container hide">
+      <p class="msg">Winner</p>
+      <button class="new">New Game</button>
+    </div>
+
+    <main>
+      <h1>TIC - TAC - TOE</h1>
+
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+
+      <button class="reset">Reset Game</button>
+
+      <div class="help">
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+
+      <div id="helpModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>How to Play</h2>
+          <p>Here are the instructions to play Tic-Tac-Toe:</p>
+          <ul>
+            <li>The game is played on a 3x3 grid.</li>
+            <li>
+              Two players take turns marking a square with either an "X" or an
+              "O".
+            </li>
+            <li>
+              The first player to get three of their marks in a row
+              (horizontally, vertically, or diagonally) wins.
+            </li>
+            <li>
+              If all squares are filled and no one wins, the game is a draw.
+            </li>
+            <li>Click a square to place your mark.</li>
+          </ul>
+          <p>Have fun playing!</p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function goToHome() {
+        window.location.href = "../index.html";
+      }
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

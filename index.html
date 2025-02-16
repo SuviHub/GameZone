@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to The GamezZone</h1>
+        <div class="game-grid">
+            <div class="game-card" onclick="navigateToGame('SnakeGame/index.html')">
+                <img src="images/snakegame.png" alt="Snake Game">
+                <h2>Snake Game</h2>
+                <p>Eat All You Can...</p>
+            </div>
+            
+            <div class="game-card" onclick="navigateToGame('TicTacToe/index.html')">
+                <img src="images/tictactoe.png" alt="Game 2">
+                <h2>Tic-Tac-Toe</h2>
+                <p>Defeat your friends...</p>
+            </div>
+            
+            <div class="game-card" onclick="navigateToGame('SimonSays/index.html')">
+                <img src="images/simon.png" alt="Game 3">
+                <h2>Simon Says Game</h2>
+                <p>Test Your Memory...</p>
+            </div>
+
+            <div class="game-card" onclick="navigateToGame('RockPaperScissors/index.html')">
+                <img src="images/rock.png" alt="Game 3">
+                <h2>Rock Paper Scissors</h2>
+                <p>Test Your Luck...</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

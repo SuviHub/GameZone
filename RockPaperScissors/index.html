@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="inputNo">
+      <input type="number" id="rounds" placeholder="Enter number of rounds" />
+      <button id="submit">Submit</button>
+    </div>
+
+    <button class="home-button" onclick="goToHome()">
+      <i class="fa-solid fa-home"></i> Home
+    </button>
+
+    <div class="game hide">
+      <div class="choices">
+        <div class="choice" id="rock">
+          <img src="assets/rock.png" alt="Rock" />
+        </div>
+        <div class="choice" id="paper">
+          <img src="assets/paper.png" alt="Paper" />
+        </div>
+        <div class="choice" id="scissors">
+          <img src="assets/scissors.png" alt="Scissors" />
+        </div>
+      </div>
+
+      <div class="score-board">
+        <div class="score">
+          <p id="user-score">0</p>
+          <p>You</p>
+        </div>
+        <div class="score">
+          <p id="comp-score">0</p>
+          <p>Comp</p>
+        </div>
+      </div>
+
+      <div class="msg-container">
+        <div class="msg">Play Your Move</div>
+      </div>
+
+      <div class="reset">
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="help">
+      <i class="fa-solid fa-circle-info"></i>
+    </div>
+
+    <div id="helpModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>How to Play</h2>
+        <p>The instructions to play Rock Paper Scissors:</p>
+        <ul>
+          <li>The game is played between two players: you and the computer.</li>
+          <li>Each player chooses one of three options: Rock, Paper, or Scissors.</li>
+          <li><b>The rules are simple:</b></li>
+          <ul>
+            <li>Rock beats Scissors.</li>
+            <li>Scissors beats Paper.</li>
+            <li>Paper beats Rock.</li>
+          </ul>
+          <li>The player who makes the winning choice earns 1 point.</li>
+          <li>If both players choose the same option, it's a tie.</li>
+          <li>The game continues until all rounds are played.</li>
+        </ul>
+        <p>Good luck and have fun!</p>
+      </div>
+    </div>
+
+    <script>
+      function goToHome() {
+          window.location.href = "../index.html";
+      }
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
