@@ -25,7 +25,7 @@ Get ready to relive your favorite classic games, all in one place:
 Love for classic games! ❤️
 
 ## 📸 Screenshots
-![Image](https://github.com/user-attachments/assets/94865c47-1f59-4781-abf8-3cda894d04e8)
+![Image](https://github.com/user-attachments/assets/714e2c8a-a45a-4131-9466-213e97f749bd)
 
 ## 🌟 Show Your Support
 If you enjoy these games, don't forget to give the repository a star! ⭐
